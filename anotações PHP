@@ -1,0 +1,39 @@
+
+Variáveis -> São usadas para armazenamento de dados. 
+
+No PHP o símbolo usado para as Variáveis é o "$". Ex: $idade = 3;
+
+------------------------------------------------------------------------------------------
+
+Tipos de Variáveis e Declarações:
+
+Inteiro -> (int) / (integer), são usadas na conversão para número inteiro.
+
+Real -> (real) / (float) / (double), são usadas na conversão para número real. 
+
+Caractere -> (string) é usada para a conversão para texto.
+
+Lógico -> Não existe a conversão. 
+
+------------------------------------------------------------------------------------------
+
+Concatenação:
+
+No PHP o "." (ponto) é usado para fazer a concatenação.
+
+Ex: 
+    $nome = "Gustavo";
+    $idade = 36;
+    echo $nome." Tem ".$idade." anos!";
+
+               Ou
+
+Também é possível fazer a concatenação colocando as variáveis dentro das aspas duplas (""). 
+
+Ex:
+
+    $nome = "Gustavo";
+        $idade = 36;
+        echo  "$nome tem $idade anos!";
+
+OBS: A concatenação usando as aspas não funciona se forem as aspas simples (''), o PHP lê como se fosse uma string....
