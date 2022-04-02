@@ -158,6 +158,58 @@ Ex:
     $site = "cursoemvideo";
     $$site = "CursoPHp";
 
-Basicamente, a segunda variável pego o valor atribuido a primeira variável como nome.
+Basicamente, a segunda variável pego o valor atribuído a primeira variável como nome.
 
 Exercícios na aula de Operadores de Atribuição.
+---------------------------------------------------------------------------------------------------------------------------
+
+Operadores Relacionais
+
+Maior -> > -> Usado na comparação para ver se determinada variável é a maior.
+Ex: $a > $b
+
+Menor -> < -> Usada na comparação para ver se determinada variável é a menor.
+Ex: $a < $b
+
+Maior ou Igual -> >= -> Usada na comparação para ver se determinada variável é maior ou igual a outra.
+Ex: $a >= $b
+
+Menor ou Igual -> <= -> Usada na comparação para ver se determinada variável é menor ou igual a outra.
+Ex: $a <= $b
+
+Diferente -> <> ou != -> Usadas na comparação para ver se determinada variável é diferente da outra.
+Ex: $a <> $b
+
+Igual -> == -> Usada na comparação para ver se determinada variável é igual a outra.
+Ex: 
+    $a = 3;
+    $b = "3";
+    $a == $b; 
+    
+O operador vai dizer que está certo, apesar de uma variável ser do tipo number e a outra ser do tipo string.
+
+Idêntico -> === -> Usada na comparação para ver se determinada variável for do mesmo tipo da outra.
+Ex:
+    $a = 3;
+    $b = "3";
+    $a === $b;
+
+O operador vai dizer que está errado, pois as variáveis são de tipos diferentes, sendo uma do tipo number e a outra do tipo string.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Operador Unário
+
+
+sintaxe -> expressão ? valor verdadeiro : valor falso
+
+Ex: 
+                       falso  
+                         |
+$maior = $a > $b ? $a : $b
+           |        | 
+     expressão  verdadeiro
+
+ Se a variável $a for maior que a variável $b, então $a é verdadeiro, se não é falso e a variável $b é a maior.
+
+Se a variável $a for maior que $b, a variável $maior irá receber a variável $a, se a variável $a for menor que a variável $b, a variável $maior irá receber a variável $b.
