@@ -37,3 +37,125 @@ Ex:
         echo  "$nome tem $idade anos!";
 
 OBS: A concatenação usando as aspas não funciona se forem as aspas simples (''), o PHP lê como se fosse uma string....
+
+--------------------------------------------------------------------------------------------
+
+Operados Aritméticos
+
+Adição -> + -> Operador que realiza uma soma. Ex: $r = $a + $b;
+
+Subtração -> - -> Operador que realiza uma subtração. Ex: $r = $a - $b; 
+
+Multiplicação -> * -> Operador que realiza uma multiplicação. Ex: $r = $a * $b;
+
+Divisão -> / -> Operador que realiza uma divisão. Ex: $r = $a / $b;
+
+Módulo / Resto da Divisão -> % -> Operador que calcula o resto de uma divisão. Ex: $r = $a % $b;
+
+OBS: Não é possível fazer uma concatenação com os Operadores Aritméticos dentro das Aspas ("" e ''), o PHP lê como se fosse uma string. 
+
+-----------------------------------------------------------------------------------------------------
+
+Ordem de Precedência dos Operadores Aritméticos
+
+Parênteses -> () -> Se uma conta tiver um parêntese no meio, será o parêntese o primeiro a ser resolvido.
+
+Multiplicação (*) / Divisão (/) / Resto da Divisão (%) -> Depois do parêntese o segundo operador é a multiplicação, divisão ou o resto da divisão, depende qual vier primeiro.
+
+Adição (+) / Subtração (-) -> O terceiro operador a ser resolvido é a adição e a subtração, dependendo de qual vier na conta primero.
+
+------------------------------------------------------------------------------------------------------
+
+Funções Matemáticas
+
+abs () -> Valor Absoluto -> Serve para pegar o valor absoluto de uma variável.
+
+pow () -> Potenciação -> Serve para criar uma potenciação.
+
+sqrt () -> Raiz Quadrada -> Serve para criar uma raiz quadrada.
+
+round () -> Arrendondamento -> Serva para arrendondar um valor. Existe mais duas funções que servem para o arredondamento: ceil e floor, o ceil arredonda para cima independente do valor após a vírgula, e o floor arredonda para baixo independente do valor após a vírgula, enquanto o round repeita as regras de arredondamento da matemática.
+
+intval () -> Valor Inteiro da Variável -> Essa função serve para pegar o número inteiro de u número real.
+
+number_format () -> Formatação -> Muito útil na formatação de número monetário.
+
+Exemplos na Aula de Operados Aritméticos
+
+------------------------------------------------------------------------------------------------------------
+
+Operadores de Atribuição
+
+ 
+Adição -> += 
+Ex: $a = $a + $b -> $a += $b
+
+Subtração -> -= 
+Ex: $a = $a - $b -> $a -= $b
+
+Multiplicação > *=
+Ex: $a = $a * $b -> $a *= $b
+
+Divisão -> /=
+Ex: $a = $a / $b -> $a /= $b
+
+Módulo / Resto da Divisão -> %=
+Ex: $a = $a % $b -> $a %= $b
+
+Concatenação -> Usado para string na hora de concatenar as expressões
+Ex: $a = $a . $b -> $a .= $b -> $a recebe $a contenado a $b
+
+Exercício na aula de Operadores de Atribuição
+-------------------------------------------------------------------------------------------------------------
+
+Operadores de Incremento
+
+Pré-Incremento -> ++variável -> Ele vai incrementar o ++ antes de rodar a varialvel.
+Ex: $a = $a + 1 -> ++$a
+
+Pós-Incremento -> varialvel++ -> Ele vai rodar a varialvel primeiro para depois incrementar o ++.
+Ex: $a = $a + 1 -> $a++
+
+Pré-Decremento -> --variável -> Ele vai incrementar o -- antes de rodar a varialvel.
+Ex: $a = $a - 1 -> --$a
+
+Pós-Decremento -> varialvel-- -> Ele vai rodar a varialvel primeiro para depois incrementar o --.
+Ex: $a = $a - 1 -> $a--
+
+Exercício na aula de Operadores de Atribuição
+--------------------------------------------------------------------------------------------------------------
+
+Comentários
+
+// -> Comenta uma linha.
+
+# -> Comenta uma linha.
+
+/**/ -> Comenta várias linhas.
+
+----------------------------------------------------------------------------------------------------------------
+
+Variáveis Referenciadas
+
+& -> uma varialvel se tornará uma referencia a outra.
+Ex:
+
+    $a = 3;
+    $b = &$a; 
+    $b += 5;
+    echo $a; -> Resposta 8
+    echo $b; -> Resposta 8
+
+A varialvel $a se tornará uma referencia a varial $b, ou seja $b terá o mesmo valor que $a, e tudo que acontecer com uma acontecerá com a outra.
+
+Exercício na aula de Operadores de Atribuição
+---------------------------------------------------------------------------------------------------------------------
+
+Variáveis de Variáveis
+
+Ex:
+
+    $site = "cursoemvideo";
+    $$site = "CursoPHp";
+
+Basicamente, a segunda variável pego o valor atribuido a primeira variável como nome.
