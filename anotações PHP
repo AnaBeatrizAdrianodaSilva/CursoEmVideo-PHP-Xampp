@@ -274,6 +274,8 @@ isset() -> Significa: se foi configurado.
 
 Array
 
+Um array serve para armazenar mais de uma dado dentro de uma única variável.
+
 Para criar uma array é usado os colchetes [].
 
 Ex: $ingredientes = [ // Os valores dentro de array começam pelo 0
