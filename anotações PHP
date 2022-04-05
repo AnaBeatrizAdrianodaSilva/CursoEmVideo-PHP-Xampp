@@ -199,7 +199,7 @@ O operador vai dizer que está errado, pois as variáveis são de tipos diferent
 Exercício na aula de Operadores Unitários
 ------------------------------------------------------------------------------------------------------------------------
 
-Operador Unário
+Operador Ternário
 
 
 sintaxe -> expressão ? valor verdadeiro : valor falso
