@@ -9,11 +9,11 @@
 </head>
 <body>
     <?php
-        $nome = $_GET["nome"];
+        $nome = isset($_GET["nome"])?$_GET["nome"]:"[NÃO INFORMADO]"; // isset() significa: se foi configurado
         $ano = $_GET["ano"];
         $sexo = $_GET["sexo"];
         $idade = date("Y") - $ano; // o código date("") faz com que diga o ano em que você está. Colocar o "y" minúsculo faz com que aparece o dois números do ano, no caso o 22 de 2022, o "Y" maiúsculo faz com que apareça o ano inteiro, no caso 2022.
-        echo $nome. " tem " .$idade. " anos.";
+        echo $nome. " é " .$sexo. " e tem " .$idade. " anos." ;
     ?>
     <br>
     <br>

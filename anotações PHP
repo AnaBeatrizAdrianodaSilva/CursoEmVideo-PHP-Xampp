@@ -260,3 +260,34 @@ Metodo GET e POST
 
 Se usado no formulário HTML o method="get", o código em PHP será $_GET.
 Se usado no formulário HTML o method="post", o código em PHP será $_POST.
+
+Exercícios na aula de Integração PHP e HTML
+-----------------------------------------------------------------------------------------------------------
+
+Códigos
+
+date() -> O código date("") faz com que diga o ano em que você está. Colocar o "y" minúsculo faz com que aparece o dois números do ano, no caso o 22 de 2022, o "Y" maiúsculo faz com que apareça o ano inteiro, no caso 2022.
+
+isset() -> Significa: se foi configurado.
+
+-------------------------------------------------------------------------------------------------------------
+
+Array
+
+Para criar uma array é usado os colchetes [].
+
+Ex: $ingredientes = [ // Os valores dentro de array começam pelo 0
+    'Açúcar', // Item 0
+    'Farinha', // Item 1
+    'Ovos', // Item 2
+    'Leite', // Item 3
+    'Azeite', // Item 4
+    'Fermento' // Item 5
+];
+
+    echo $ingredientes[0]."<br>"; // O 0 dentro do colchete indica qual o valor da array $ingredientes é para escrever.
+    echo $ingredientes[1]."<br>";
+    echo $ingredientes[2]."<br>";
+    echo $ingredientes[3]."<br>";
+    echo $ingredientes[4]."<br>";
+    echo $ingredientes[5]."<br>";
