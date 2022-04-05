@@ -196,6 +196,7 @@ Ex:
 
 O operador vai dizer que está errado, pois as variáveis são de tipos diferentes, sendo uma do tipo number e a outra do tipo string.
 
+Exercício na aula de Operadores Unitários
 ------------------------------------------------------------------------------------------------------------------------
 
 Operador Unário
@@ -213,3 +214,20 @@ $maior = $a > $b ? $a : $b
  Se a variável $a for maior que a variável $b, então $a é verdadeiro, se não é falso e a variável $b é a maior.
 
 Se a variável $a for maior que $b, a variável $maior irá receber a variável $a, se a variável $a for menor que a variável $b, a variável $maior irá receber a variável $b.
+
+Exercício na aula de Operadores Unitários
+-------------------------------------------------------------------------------------------------------------------------
+
+Operadores Lógicos
+
+&& -> E -> Só pode ser considerado verdadeiro apenas se todas as afirmações forem verdadeiras, basta ter uma afirmação falsa para o resultado ser falso.
+
+|| -> OU -> Para o resultado ser verdadeiro, basta ter uma afirmação verdadeira, e para o resultado ser falso, todas as afirmações precisam ser falsas.
+
+XOR -> OU Exclusivo -> Para o resultado ser verdadeiro, todas as afirmações tem que ter uma verdadeira e uma falsa, e para ser um resultado falso, basta ter todas as afirmações verdadeiras ou falsas.
+
+! -> NÃO -> Quando uma afirmação for verdadeiro resultado será falso, e quando a afirmação for falsa o resultado será verdadeiro.
+
+Exercício na aula de Operadores Lógicos
+---------------------------------------------------------------------------------------------------------------------------
+
