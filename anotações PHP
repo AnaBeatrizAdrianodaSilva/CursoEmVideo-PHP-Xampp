@@ -293,3 +293,28 @@ Ex: $ingredientes = [ // Os valores dentro de array começam pelo 0
     echo $ingredientes[3]."<br>";
     echo $ingredientes[4]."<br>";
     echo $ingredientes[5]."<br>";
+
+
+-------------------------------------------------------------------------------------------------------
+
+Array Spread
+
+Uma técnica usada para colocar os valores de uma array em outra array.
+
+EX:
+
+$bolo = [
+    ...$ingredientes, 'Granulado'
+]; 
+
+Somente funciona nas versões mais atualizadas do PHP.
+
+--------------------------------------------------------------------------------------------------------
+
+print_r () -> Mostra todas os valores de uma array e seus números.
+
+Ex:
+
+print_r($ingredientes);
+
+Resultado: Array ( [0] => Açúcar [1] => Farinha [2] => Ovos [3] => Leite [4] => Azeite [5] => Fermento )
