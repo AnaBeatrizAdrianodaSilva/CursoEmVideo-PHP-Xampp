@@ -4,11 +4,12 @@ body {
     font-size: 1.1em;
 }
 
-a.link {
+.link {
     text-decoration: none;
     color: black;
 }
 
-hover:a.link {
+.link:hover {
     text-decoration: underline;
+    color: darkslategray;
 }
