@@ -3,3 +3,12 @@ body {
     font-family: Arial, sans-serif;
     font-size: 1.1em;
 }
+
+a.link {
+    text-decoration: none;
+    color: black;
+}
+
+hover:a.link {
+    text-decoration: underline;
+}

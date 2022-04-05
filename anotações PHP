@@ -231,3 +231,32 @@ XOR -> OU Exclusivo -> Para o resultado ser verdadeiro, todas as afirmações te
 Exercício na aula de Operadores Lógicos
 ---------------------------------------------------------------------------------------------------------------------------
 
+Integração HTML e PHP
+
+Na tag <form></form> no HTML, para pegar os dados é usado dois parâmetros, o method="" e o action="".
+
+method = "" -> Indica o metodo de envio, podendo ser get ou post.
+
+action = "" -> Indica uma ação, para onde os dados serão enviados.
+
+Exemplo HTML:
+
+<form method="get" action="dados.php"> 
+    <input type="text" name"v">
+    <input type="submt" value-"Calcular">
+</form>
+
+Quando apertar no botão Calcular, os dados da caixa de texto "v" irá mandar para o arquivo dados.php.
+
+Exemplo PHP:
+
+<?php
+    $valor = $_GET["v"];
+?>
+
+A variável $valor pegou o metodo dito no form HTML, que no caso seria o $_GET, e pegou o nome do dado, que no caso seria "v".
+
+Metodo GET e POST
+
+Se usado no formulário HTML o method="get", o código em PHP será $_GET.
+Se usado no formulário HTML o method="post", o código em PHP será $_POST.
