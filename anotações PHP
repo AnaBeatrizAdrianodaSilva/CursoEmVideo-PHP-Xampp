@@ -318,3 +318,28 @@ Ex:
 print_r($ingredientes);
 
 Resultado: Array ( [0] => Açúcar [1] => Farinha [2] => Ovos [3] => Leite [4] => Azeite [5] => Fermento )
+
+------------------------------------------------------------------------------------------------------------
+
+Estrutura Condicional if e else
+
+if (condição) {
+    // Bloco 1
+} else {
+    // Bloco 2
+}
+
+if -> Se
+else -> Então
+
+Se a condição for verdadeira, o bloco 1 é realizado, se a condição for falsa, o bloco 2 será realizado.
+
+Ex:
+
+    if ($idade >= 18) {
+        $vota = true;
+    } else {
+        $vota = false;
+    };
+
+
