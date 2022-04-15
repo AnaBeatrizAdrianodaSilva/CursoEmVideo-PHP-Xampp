@@ -344,7 +344,52 @@ Ex:
     
 ----------------------------------------------------------------------------------------------------------------
 
+Estrutura Condicional if e else aninhada
+
+Ex:
+
+if ($idade < 16) {
+    // Bloco 1
+    $tipoVota = "não vota";
+} else {
+    // Bloco 2
+    if ($idade >= 16 && $idade < 18) {
+        // Bloco 3
+        $tipoVoto = "voto opcional";
+    } else {
+        // Bloco 4
+        $tipoVoto = "voto obrigatório";
+    }
+}
+
+Se a condição do bloco 1 estiver correta, o bloco será executado, mas se estiver errada o bloco 2 será excutado, então se a condição do bloco 3 estiver correta, o bloco será executado, mas se não estiver correta o bloco 4 será executado.
+
+----------------------------------------------------------------------------------------------------------------
+
 sort() -> Ordena os valores de Array.
 
+---------------------------------------------------------------------------------------------------------------
+
+inclued
+
+conecta um arquivo php com um css
+
+Ex arquivo css detro de um arquivo php: 
+
+<style type="text/css">
+.teste {
+    color: red;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+
+</style>
+
+Ex do arquivo php conectado ao arquivo com css:
+
+<?php
+        include ("style.php"); 
+    ?>
 
 
